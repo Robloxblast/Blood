@@ -111,6 +111,13 @@ wait(0.1)
 })
 
 
+local Tab = Window:MakeTab({
+	Name = "Teleport",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
 Tab:AddButton({
 	Name = "Arena 1",
 	Callback = function()
