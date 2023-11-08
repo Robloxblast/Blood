@@ -55,6 +55,30 @@ Tab:AddToggle({
 })
 
 
+Tab:AddToggle({
+	Name = "Auto Removal",
+	Default = false,
+	Callback = function(Value)
+		  getgenv(). Remo = Value
+		
+		while getgenv(). Remo do
+		for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+if v.Name == "Removal" then
+if getgenv(). Remo == false then break end
+local Item = v.Name
+v.Parent = game:GetService("Players").LocalPlayer.Character
+game:GetService("Players").LocalPlayer.Character:FindFirstChild(tostring(Item)):Activate()
+task.wait(2.2)
+game:GetService("Players").LocalPlayer.Character:FindFirstChild(tostring(Item)).Parent = game:GetService("Players").LocalPlayer.Backpack
+task.wait(2.3)
+task.wait(0.5)
+end
+end
+	end    
+	end
+})
+
+
 Tab:AddButton({
 	Name = "Get Skill Books (MUST SPAWN)",
 	Callback = function()
