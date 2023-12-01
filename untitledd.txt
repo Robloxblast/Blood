@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Blast Hub [Blood Surge Free Version]", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Blast Hub [Free Version]", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -34,7 +34,7 @@ end
 Tab:AddDropdown({
 	Name = "Choose How Much Skills To Dupe",
 	Default = "2",
-	Options = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "15", "20", "30", "40", "50", "100", "200"},
+	Options = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "15", "20", "30", "40", "50", "60", "70", "80", "90", "100", "200", "300"},
 	Callback = function(Value)
 		  DupeAmount = Value
 	end    
@@ -52,29 +52,6 @@ Tab:AddToggle({
 		wait(0.2)
 		end
    	end    
-})
-
-
-Tab:AddToggle({
-	Name = "Auto Removal",
-	Default = false,
-	Callback = function(Value)
-		  getgenv(). Remo = Value
-		
-		while getgenv(). Remo do
-		for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
-if v.Name == "Removal" then
-if getgenv(). Remo == false then break end
-local Item = v.Name
-v.Parent = game:GetService("Players").LocalPlayer.Character
-game:GetService("Players").LocalPlayer.Character:FindFirstChild(tostring(Item)):Activate()
-task.wait(1.8)
-game:GetService("Players").LocalPlayer.Character:FindFirstChild(tostring(Item)).Parent = game:GetService("Players").LocalPlayer.Backpack
-task.wait(2)
-end
-end
-	end    
-	end
 })
 
 
@@ -105,25 +82,25 @@ Tab:AddButton({
 	Name = "Get Skill Books (MUST SPAWN)",
 	Callback = function()
       	  local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = CFrame.new(1532.0128173828125, 43.821468353271484, -1645.9918212890625)
+rootPart.CFrame = CFrame.new(532.2389526367188, 4.936333656311035, -229.5930938720703	)
 wait(0.2)
 local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = CFrame.new(1947.2750244140625, 31.70957374572754, -1742.963134765625)
+rootPart.CFrame = CFrame.new(928.0205688476562, 4.999998569488525, -36.954219818115234)
 wait(0.4)
 local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = CFrame.new(2067.399169921875, 31.744413375854492, -2049.773681640625)
+rootPart.CFrame = CFrame.new(70.1484375, 4.999998569488525, -147.6035614013672)
 wait(0.5)
 local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = CFrame.new(2020.8194580078125, 44.8864631652832, -2356.5361328125)
+rootPart.CFrame = CFrame.new(99.6871337890625, 4.999998092651367, 502.5851745605469)
 wait(0.1)
 local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = CFrame.new(2318.08154296875, 31.744413375854492, -1990.8126220703125)
+rootPart.CFrame = CFrame.new(399.0008544921875, 4.936333656311035, -199.45173645019535)
 wait(0.2)
 local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = CFrame.new(2361.16552734375, 31.744413375854492, -2232.165771484375)
+rootPart.CFrame = CFrame.new(514.2705078125, 4.999998569488525, 317.48382568359375)
 wait(0.3)
 local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = CFrame.new(1765.177978515625, 31.694416046142578, -2148.13623046875)
+rootPart.CFrame = CFrame.new(649.1497802734375, 43.910823822021484, -212.01101684570312)
 wait(0.1)
   	end    
 })
@@ -133,29 +110,35 @@ Tab:AddButton({
 	Name = "Get Money On The Ground (MUST SPAWN)",
 	Callback = function()
       	  local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = CFrame.new(1949.950927734375, 31.694416046142578, -2203.071533203125)
+rootPart.CFrame = CFrame.new(407.4952697753906, 4.999998569488525, -86.29705047607422)
 wait(0.1)
 local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = CFrame.new(1949.9464111328125, 31.694416046142578, -2104.726318359375)
+rootPart.CFrame = CFrame.new(823.9794921875, 4.999998569488525, -362.3039245605469)
 wait(0.2)
 local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = CFrame.new(1709.39794921875, 31.486520767211914, -1898.48681640625)
+rootPart.CFrame = CFrame.new(528.4717407226562, 4.999998569488525, 255.55043029785156)
 wait(0.3)
 local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = CFrame.new(1606.8402099609375, 31.486520767211914, -2012.7227783203125)
+rootPart.CFrame = CFrame.new(211.78480529785156, 4.999998092651367, 85.31290435791016)
 wait(0.4)
 local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = CFrame.new(2126.74462890625, 31.744413375854492, -2139.005615234375)
+rootPart.CFrame = CFrame.new(295.9286804199219, 4.829326152801514, 370.8155212402344)
 wait(0.1)
 local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = CFrame.new(1838.73291015625, 31.694416046142578, -1857.8759765625)
+rootPart.CFrame = CFrame.new(72.10911560058594, 4.999998092651367, 39.50250244140625)
 wait(0.2)
 local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = CFrame.new(1926.5313720703125, 31.70957374572754, -1858.228271484375)
+rootPart.CFrame = CFrame.new(61.2112922668457, 4.999998569488525, -89.25332641601562)
 wait(0.3)
 local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = CFrame.new(1612.896484375, 31.695205688476562, -2260.817138671875)
+rootPart.CFrame = CFrame.new(81.8014907836914, 4.999998569488525, 259.2491149902344)
 wait(0.1)
+local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(612.2162475585938, 4.999998569488525, -358.71026611328125)
+wait(0.2)
+local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(648.0490112304688, 4.998870849609375, 93.29029846191406)
+wait(0.3)
   	end    
 })
 
@@ -171,7 +154,7 @@ Tab:AddButton({
 	Name = "Arena 1",
 	Callback = function()
       		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = CFrame.new(1933.1361083984375, 31.694408416748047, -2021.5955810546875)
+rootPart.CFrame = CFrame.new(299.83868408203125, 4.936333656311035, 296.92510986328125)
   	end    
 })
 
@@ -180,7 +163,7 @@ Tab:AddButton({
 	Name = "Arena 2",
 	Callback = function()
       		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = CFrame.new(1766.6759033203125, 44.44845199584961, -2457.771728515625)
+rootPart.CFrame = CFrame.new(300.0875549316406, 4.936333656311035, 179.95822143554688)
   	end    
 })
 
@@ -189,16 +172,7 @@ Tab:AddButton({
 	Name = "Hospital",
 	Callback = function()
       		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = CFrame.new(1652.314453125, 31.578781127929688, -1981.8773193359375)
-  	end    
-})
-
-
-Tab:AddButton({
-	Name = "Reset Style And Sub Skill Place",
-	Callback = function()
-      		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = CFrame.new(1809.205810546875, 31.898895263671875, -1983.5714111328125)
+rootPart.CFrame = CFrame.new(458.7191467285156, 5.114206314086914, 88.8961410522461)
   	end    
 })
 
